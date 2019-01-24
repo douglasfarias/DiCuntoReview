@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="bdPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="821.0" style="-fx-background-color: rgb(255,247,249);" stylesheets="@../css/cssdc.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLDocumentController">
+   <bottom>
+      <HBox fx:id="hbPane" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="btnCaixa" mnemonicParsing="false" onAction="#startCaixa" style="-fx-min-height: 100px; -fx-min-width: 100px;" text="Caixa">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <ImageInput x="-10.0" y="-10.0">
+                           <source>
+                              <Image url="@../img/Caixa.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                  </Button>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="100.0" text="Caixa" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="btnProduto" mnemonicParsing="false" onAction="#startProduto" onMouseEntered="#mouseEntered" style="-fx-min-height: 100px; -fx-min-width: 100px;" text="Produto">
+                     <effect>
+                        <ImageInput x="-10.0" y="-10.0">
+                           <source>
+                              <Image url="@../img/Produto.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label alignment="CENTER" prefWidth="100.0" text="Produto" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="btnCliente" mnemonicParsing="false" onAction="#startFrmCadastro" onMouseEntered="#mouseEntered" style="-fx-min-height: 100px; -fx-min-width: 100px;" text="Cliente">
+                     <effect>
+                        <ImageInput x="-10.0" y="-10.0">
+                           <source>
+                              <Image url="@../img/Note-Memo-128.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label alignment="CENTER" prefWidth="100.0" text="Cadastrar" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="btnFornecedor" mnemonicParsing="false" onAction="#mouseClickButton" onMouseEntered="#mouseEntered" style="-fx-min-height: 100px; -fx-min-width: 100px;" text="Fornecedor">
+                     <effect>
+                        <ImageInput x="-10.0" y="-10.0">
+                           <source>
+                              <Image url="@../img/Tab-History-128.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label alignment="CENTER" prefWidth="100.0" text="Relatório" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="btnFuncionario" mnemonicParsing="false" onAction="#mouseClickButton" onMouseEntered="#mouseEntered" style="-fx-min-height: 100px; -fx-min-width: 100px;" text="Funcionario">
+                     <effect>
+                        <ImageInput x="-10.0" y="-10.0">
+                           <source>
+                              <Image url="@../img/24-7-128.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label alignment="CENTER" prefWidth="100.0" text="Suporte" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="btnRelatorio" mnemonicParsing="false" onAction="#sair" onMouseEntered="#mouseEntered" style="-fx-min-height: 100px; -fx-min-width: 100px;" text="Relatorio">
+                     <effect>
+                        <ImageInput x="-10.0" y="-10.0">
+                           <source>
+                              <Image url="@../img/Shop-Closed-128.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label alignment="CENTER" prefWidth="100.0" text="Sair" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <ImageView fx:id="logo" fitHeight="265.0" fitWidth="428.0" onMouseClicked="#mouseClickLogo" pickOnBounds="true" preserveRatio="true" styleClass="logo" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../img/Logo_Vetor_700x400.png" />
+         </image>
+         <effect>
+            <GaussianBlur radius="0.48" />
+         </effect>
+         <viewport>
+            <Rectangle2D height="500.0" width="720.0" />
+         </viewport>
+      </ImageView>
+   </center>
+</BorderPane>

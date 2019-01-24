@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="678.0" style="-fx-background-color: white;" stylesheets="@../css/cssdc.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLDocumentController">
+   <top>
+      <Label text="Gerenciamento de produtos" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="@../img/add.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                  </Button>
+                  <Label text="Adicionar" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="@../img/edit.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                  </Button>
+                  <Label text="Editar" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="@../img/remove.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                  </Button>
+                  <Label text="Excluir" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <GridPane>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <AnchorPane BorderPane.alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <children>
+                  <TextField layoutY="192.0" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="300.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField layoutX="329.0" layoutY="192.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets right="300.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextArea layoutY="105.0" prefHeight="63.0" prefWidth="245.0" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="30.0" left="10.0" right="150.0" />
+                     </GridPane.margin>
+                  </TextArea>
+                  <Label layoutX="329.0" text="Categoria" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM" />
+                  <Label layoutX="329.0" layoutY="175.0" text="Peso" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                  <Label layoutY="88.0" text="Descrição" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <ComboBox layoutX="329.0" layoutY="17.0" prefWidth="200.0" promptText="Selecione a categoria" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                  <Label layoutY="175.0" text="Quantidade" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label layoutX="329.0" layoutY="88.0" text="Fornecedor" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                  <ComboBox layoutX="329.0" layoutY="105.0" prefWidth="200.0" promptText="Selecione o fornecedor" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                  <Label text="Nome" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField layoutY="17.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="150.0" />
+                     </GridPane.margin>
+                  </TextField>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
