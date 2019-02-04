@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1032.0" style="-fx-background-color: white;" stylesheets="@../css/cssdc.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLDocumentController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1032.0" style="-fx-background-color: white;" stylesheets="@../css/cssdc.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLFrmCadastroController">
    <top>
       <Label text="Gerenciamento de cadastros" BorderPane.alignment="CENTER">
          <font>
@@ -41,7 +41,7 @@
             </VBox>
             <VBox prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Button fx:id="btnEditar" alignment="CENTER" mnemonicParsing="false" onAction="#editarCadastro" prefHeight="50.0" prefWidth="50.0" text="Button">
+                  <Button fx:id="btnEditar" alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                      <effect>
                         <ImageInput>
                            <source>
@@ -59,7 +59,7 @@
             </VBox>
             <VBox prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Button fx:id="btnRemover" alignment="CENTER" mnemonicParsing="false" onAction="#excluirCadastro" prefHeight="50.0" prefWidth="50.0" text="Button">
+                  <Button fx:id="btnRemover" alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                      <effect>
                         <ImageInput>
                            <source>
@@ -107,7 +107,7 @@
                         <Insets left="25.0" />
                      </padding>
                   </Label>
-                  <TextField fx:id="txtEmail" layoutY="429.0" prefWidth="300.0" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="TOP" />
+                  <TextField fx:id="txtEmail" layoutY="429.0" prefWidth="300.0" text="joão116@gmail.com" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="TOP" />
                   <Label fx:id="lblNumero" layoutX="644.0" layoutY="69.0" text="Número" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM" />
                   <Label fx:id="lblCodigo" layoutY="69.0" text="Código" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM" />
                   <RadioButton fx:id="rbFornecedor" layoutX="105.0" layoutY="35.0" mnemonicParsing="false" text="Fornecedor" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
@@ -125,7 +125,7 @@
                         <Insets left="50.0" />
                      </padding>
                   </Label>
-                  <TextField fx:id="txtEstado" layoutX="644.0" layoutY="172.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                  <TextField fx:id="txtEstado" layoutX="644.0" layoutY="172.0" text="SP" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
                      <GridPane.margin>
                         <Insets right="200.0" />
                      </GridPane.margin>
@@ -140,10 +140,10 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="txtEndereco" layoutY="258.0" prefWidth="250.0" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+                  <TextField fx:id="txtEndereco" layoutY="258.0" prefWidth="250.0" text="Rua Diego de Losada" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP" />
                   <Label fx:id="lblEstado" layoutX="644.0" layoutY="155.0" text="Estado" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
                   <Label fx:id="lblNome" layoutY="155.0" text="Nome" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                  <TextField fx:id="txtTelefone" layoutX="322.0" layoutY="258.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                  <TextField fx:id="txtTelefone" layoutX="322.0" layoutY="258.0" text="1125747058" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
                      <GridPane.margin>
                         <Insets right="100.0" />
                      </GridPane.margin>
@@ -155,47 +155,47 @@
                         <Insets left="55.0" />
                      </padding>
                   </Label>
-                  <TextField fx:id="txtSetor" layoutX="644.0" layoutY="429.0" prefWidth="300.0" text="SOMENTE PARA CADASTRO DE FUNCIONÁRIOS" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="TOP" />
-                  <TextField fx:id="txtCargo" layoutX="322.0" layoutY="429.0" prefWidth="300.0" text="SOMENTE PARA CADASTRO DE FUNCIONÁRIOS" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="TOP" />
+                  <TextField fx:id="txtSetor" layoutX="644.0" layoutY="429.0" prefWidth="300.0" text="Vendas" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="TOP" />
+                  <TextField fx:id="txtCargo" layoutX="322.0" layoutY="429.0" prefWidth="300.0" text="Agente" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="TOP" />
                   <Label fx:id="lblCelular" layoutX="644.0" layoutY="241.0" text="Celular" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
                   <Label layoutX="644.0" layoutY="327.0" text="*" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
                      <padding>
                         <Insets left="110.0" />
                      </padding>
                   </Label>
-                  <TextField fx:id="txtNome" layoutY="172.0" prefHeight="25.0" prefWidth="250.0" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                  <TextField fx:id="txtNome" layoutY="172.0" prefHeight="25.0" prefWidth="250.0" text="João da Silva" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP" />
                   <Label fx:id="lblCidade" layoutX="322.0" layoutY="69.0" text="Cidade" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM" />
-                  <TextField fx:id="txtCidade" layoutX="322.0" layoutY="86.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                  <TextField fx:id="txtCidade" layoutX="322.0" layoutY="86.0" text="São Paulo" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
                      <GridPane.margin>
                         <Insets right="100.0" />
                      </GridPane.margin>
                   </TextField>
                   <Label fx:id="lblEndereco" layoutY="241.0" text="Endereço" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                  <TextField fx:id="txtCelular" layoutX="644.0" layoutY="258.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                  <TextField fx:id="txtCelular" layoutX="644.0" layoutY="258.0" text="11985222720" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
                      <GridPane.margin>
                         <Insets right="100.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField fx:id="txtBairro" layoutY="344.0" prefWidth="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="TOP" />
+                  <TextField fx:id="txtBairro" layoutY="344.0" prefWidth="200.0" text="Jardim Ataliba Leonel" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="TOP" />
                   <Label fx:id="lblSetor" layoutX="644.0" layoutY="412.0" text="Setor" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
-                  <TextField fx:id="txtCpfCnpj" layoutX="322.0" layoutY="172.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                  <TextField fx:id="txtCpfCnpj" layoutX="322.0" layoutY="172.0" text="12345678901" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
                      <GridPane.margin>
                         <Insets right="100.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField fx:id="txtDtNascimento" layoutX="644.0" layoutY="344.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="TOP">
+                  <TextField fx:id="txtDtNascimento" layoutX="644.0" layoutY="344.0" text="07051998" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="TOP">
                      <GridPane.margin>
                         <Insets right="150.0" />
                      </GridPane.margin>
                   </TextField>
                   <Label fx:id="lblDtNascimento" layoutX="644.0" layoutY="327.0" text="Data de nascimento" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
                   <Label fx:id="lblCargo" layoutX="322.0" layoutY="412.0" text="Cargo" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
-                  <TextField fx:id="txtNumero" layoutX="644.0" layoutY="86.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                  <TextField fx:id="txtNumero" layoutX="644.0" layoutY="86.0" text="0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
                      <GridPane.margin>
                         <Insets right="150.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField fx:id="txtCep" layoutX="322.0" layoutY="344.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="TOP">
+                  <TextField fx:id="txtCep" layoutX="322.0" layoutY="344.0" text="02324040" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="TOP">
                      <GridPane.margin>
                         <Insets right="150.0" />
                      </GridPane.margin>

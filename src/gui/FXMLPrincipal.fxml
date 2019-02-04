@@ -11,7 +11,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane fx:id="bdPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="821.0" style="-fx-background-color: rgb(255,247,249);" stylesheets="@../css/cssdc.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLDocumentController">
+<BorderPane fx:id="bdPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="821.0" style="-fx-background-color: rgb(255,247,249);" stylesheets="@../css/cssdc.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLPrincipalController">
    <bottom>
       <HBox fx:id="hbPane" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -41,7 +41,7 @@
             </VBox>
             <VBox prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Button fx:id="btnProduto" mnemonicParsing="false" onAction="#startProduto" onMouseEntered="#mouseEntered" style="-fx-min-height: 100px; -fx-min-width: 100px;" text="Produto">
+                  <Button fx:id="btnProduto" mnemonicParsing="false" onAction="#startProduto" style="-fx-min-height: 100px; -fx-min-width: 100px;" text="Produto">
                      <effect>
                         <ImageInput x="-10.0" y="-10.0">
                            <source>
@@ -68,7 +68,7 @@
             </VBox>
             <VBox prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Button fx:id="btnCliente" mnemonicParsing="false" onAction="#startFrmCadastro" onMouseEntered="#mouseEntered" style="-fx-min-height: 100px; -fx-min-width: 100px;" text="Cliente">
+                  <Button fx:id="btnCliente" mnemonicParsing="false" onAction="#startFrmCadastro" style="-fx-min-height: 100px; -fx-min-width: 100px;" text="Cliente">
                      <effect>
                         <ImageInput x="-10.0" y="-10.0">
                            <source>
@@ -92,7 +92,7 @@
             </VBox>
             <VBox prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Button fx:id="btnFornecedor" mnemonicParsing="false" onAction="#mouseClickButton" onMouseEntered="#mouseEntered" style="-fx-min-height: 100px; -fx-min-width: 100px;" text="Fornecedor">
+                  <Button fx:id="btnFornecedor" mnemonicParsing="false" onAction="#mouseClickButton" style="-fx-min-height: 100px; -fx-min-width: 100px;" text="Fornecedor">
                      <effect>
                         <ImageInput x="-10.0" y="-10.0">
                            <source>
@@ -116,7 +116,7 @@
             </VBox>
             <VBox prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Button fx:id="btnFuncionario" mnemonicParsing="false" onAction="#mouseClickButton" onMouseEntered="#mouseEntered" style="-fx-min-height: 100px; -fx-min-width: 100px;" text="Funcionario">
+                  <Button fx:id="btnFuncionario" mnemonicParsing="false" onAction="#mouseClickButton" style="-fx-min-height: 100px; -fx-min-width: 100px;" text="Funcionario">
                      <effect>
                         <ImageInput x="-10.0" y="-10.0">
                            <source>
@@ -143,7 +143,7 @@
             </VBox>
             <VBox prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Button fx:id="btnRelatorio" mnemonicParsing="false" onAction="#sair" onMouseEntered="#mouseEntered" style="-fx-min-height: 100px; -fx-min-width: 100px;" text="Relatorio">
+                  <Button fx:id="btnRelatorio" mnemonicParsing="false" onAction="#sair" style="-fx-min-height: 100px; -fx-min-width: 100px;" text="Relatorio">
                      <effect>
                         <ImageInput x="-10.0" y="-10.0">
                            <source>
